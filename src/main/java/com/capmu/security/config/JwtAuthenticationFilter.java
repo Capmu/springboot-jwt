@@ -22,5 +22,13 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
             @NonNull FilterChain filterChain
     ) throws ServletException, IOException {
 
+        final String authenHeader = request.getHeader("Authorization");
+        final String jwt;
+
+        if (authenHeader == null || !authenHeader.startsWith("Bearer ")) {
+            filterChain.doFilter(request, response); //pass these 2 fields to the next filter
+            return;
+        }
+        jwt = authenHeader.substring(7); //from the position after 'Bearer '
     }
 }
