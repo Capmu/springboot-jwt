@@ -1,4 +1,4 @@
-# Spring Boot -- integrated with JWT
+# Spring Boot -- integrated with JWT, connected to H2 database
 
 ![img.png](img.png)
 
@@ -6,7 +6,7 @@
 - Spring Web
 - Spring Security
 - Spring Data JPA
-- PostgreSQL Driver
+- PostgreSQL Driver | H2
 - JWT
     ```
         <dependency>
@@ -27,7 +27,8 @@
     ```
 
 ## Reference
-[Spring Boot 3 + Spring Security 6 - JWT Authentication and Authorisation](https://youtu.be/KxqlJblhzfI)
+- [Spring Boot 3 + Spring Security 6 - JWT Authentication and Authorisation](https://youtu.be/KxqlJblhzfI)
+- [spring-boot-h2-database](https://www.baeldung.com/spring-boot-h2-database)
 
 ## Cr.
 **Amigoscode**
